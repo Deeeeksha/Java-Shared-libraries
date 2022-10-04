@@ -1,5 +1,5 @@
 def login() {
-    withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'userName', passwordVariable: 'Password')]) {
+    withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'Username', passwordVariable: 'Password')]) {
         sh """
             docker login --username="${Username}" --password="${Password}"
         """
